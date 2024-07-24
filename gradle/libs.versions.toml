@@ -1,0 +1,82 @@
+[versions]
+agp = "8.4.1"
+kotlin = "2.0.0"
+compose = "1.6.7"
+compose-material3 = "1.2.1"
+androidx-activityCompose = "1.9.0"
+composeNavigation = "2.7.7"
+coilCompose = "2.6.0"
+kotlinDatetime = "0.5.0"
+hilt = "2.51.1"
+hiltCompiler = "1.2.0"
+ktor = "2.3.11"
+assertK = "0.25"
+turbine = "1.1.0"
+junit = "4.13.2"
+testRunner = "1.5.2"
+
+ksp = "2.0.0-1.0.21"
+sqlDelight = "2.0.2"
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
+compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
+compose-navigation = { module = "androidx.navigation:navigation-compose", version.ref = "composeNavigation" }
+compose-coil = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+kotlin-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinDatetime" }
+compose-icons-extended = { module = "androidx.compose.material:material-icons-extended",version.ref = "compose" }
+
+
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltCompiler" }
+hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltCompiler" }
+
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-serilization = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serilization-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-android = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
+ktor-ios = { module = "io.ktor:ktor-client-ios", version.ref = "ktor" }
+
+
+sqldelight-runtime = { module = "app.cash.sqldelight:runtime", version.ref = "sqlDelight" }
+sqldelight-android-driver = { module = "app.cash.sqldelight:android-driver", version.ref = "sqlDelight" }
+sqldelight-native-driver = { module = "app.cash.sqldelight:native-driver", version.ref = "sqlDelight" }
+sqldelight-coroutines-extension = { module = "app.cash.sqldelight:coroutines-extensions", version.ref = "sqlDelight" }
+
+
+assertK = { module = "com.willowtreeapps.assertk:assertk", version.ref = "assertK" }
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+
+junit = { module = "junit:junit", version.ref = "junit" }
+
+test-runner = { module = "androidx.test:runner", version.ref = "testRunner" }
+
+compose-test = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose" }
+compose-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose" }
+
+hilt-test = { module = "com.google.dagger:hilt-android-testing", version.ref = "hilt" }
+
+
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinComposeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinSerilization = { id = "org.jetbrains.kotlin.plugin.serialization",version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
+dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
+
+sqldelight = { id = "app.cash.sqldelight", version.ref = "sqlDelight" }
+
+
+
